@@ -13,21 +13,23 @@
     <div class="row">
       <main class="col post">
 
-        <!-- 章節標題 -->
         <div class="mb-4">
           <h1 class="mt-0 text-muted">環境安裝</h1><small>檔名：<code>createApp.html</code></small>
         </div>
 
-        <!-- 練習開始 -->
+        <!-- Step 1 load react.js & react-dom & bable -->
         <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
         <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
         <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
+
+        <!-- Step 2 create root element for react render -->
         <div id="root"></div>
 
+
+        <!-- Step 3 create react component, check it works and render to #root div -->
         <script type="text/babel">
           console.log(React, ReactDOM);
-
 
           function App () {
             return <h1>Hi React</h1>
@@ -39,14 +41,14 @@
 
         </script>
 
+        <!-- some notes -->
 
-        <!-- 五步驟，載入 React -->
         <!-- https://reactjs.org/docs/cdn-links.html#gatsby-focus-wrapper -->
         <!-- https://reactjs.org/docs/add-react-to-a-website.html#quickly-try-jsx -->
 
         <!-- 補充說明：定義 App 元件時，可自訂名稱但請使用大寫做開頭 -->
-        <!-- 詳細說明文件：https://zh-hant.reactjs.org/docs/jsx-in-depth.html#user-defined-components-must-be-capitalized -->
-        <!-- 練習結束 -->
+        <!-- https://zh-hant.reactjs.org/docs/jsx-in-depth.html#user-defined-components-must-be-capitalized -->
+
       </main>
 
       <aside class="col-md-3">
