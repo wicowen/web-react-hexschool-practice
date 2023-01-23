@@ -24,13 +24,48 @@
         </div>
         <!-- Learn Start -->
         <div id="root"></div>
-        <!-- template：https://getbootstrap.com/docs/5.2/components/card/ -->
-        <script type="text/babel">
-          console.log(React, ReactDOM);
 
+        <!-- Step 1 -->
+        <!-- get card template from bootstrap : https://getbootstrap.com/docs/5.2/components/card/ -->
+        <!-- get random image from unsplash : https://unsplash.com/ -->
+        <!-- ex: https://images.unsplash.com/photo-1674427343914-1479c75a9a9c -->
+
+        <!--
+        <div class="card" style="width: 18rem;">
+          <img src="https://images.unsplash.com/photo-1674427343914-1479c75a9a9c" class="card-img-top" alt="Ben den Engelsen">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        -->
+
+        <!-- Step 2 convert above card html to react component -->
+        <script type="text/babel">
+          // console.log(React, ReactDOM);
+
+          function App() {
+            return (
+              <div className="card">
+                <img src="https://images.unsplash.com/photo-1674427343914-1479c75a9a9c" className="card-img-top" alt="Ben den Engelsen" />
+                <div className="card-body">
+                  <h5 className="card-title">Card title</h5>
+                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" className="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            )
+          }
 
           const el = document.getElementById('root');
+          const root = ReactDOM.createRoot(el);
+          root.render(<App />);
         </script>
+        <!-- Step 2.1 create App component and render to #root div-->
+        <!-- Step 2.2 cpoy html to App component -->
+        <!-- Step 2.3 change "class" to "className" -->
+        <!-- Step 2.4 remove style "style="width: 18rem;"" -->
 
         <!-- Learn End -->
       </main>

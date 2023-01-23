@@ -1,2 +1,9 @@
 ## start a local http services
 npx http-server -p 4040
+
+
+1.1 build env
+/intro/createApp.html
+
+1.2 create template
+/intro/variables.html
