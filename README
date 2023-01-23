@@ -7,3 +7,6 @@ npx http-server -p 4040
 
 1.2 create template
 /intro/variables.html
+
+1.3 render a component with data object
+/intro/variables.html
