@@ -2,15 +2,51 @@
 </head><body class="bg-lighter">
 <div class="container main my-5"><div class="row"><main class="col post">
 <!-- 章節標題 --><div class="mb-4"><h1 class="mt-0 text-muted">什麼是 JavaScript 表達式</h1><small>檔名：<code>expression.html</code></small></div>
-<!-- 🔥🔥練習開始🔥🔥 -->
+
+<!-- 1.4 Learn Start -->
+
 <div id="root"></div>
+
 <!-- JSX 與表達式：https://reactjs.org/docs/introducing-jsx.html#embedding-expressions-in-jsx -->
 <!-- 陳述語句：https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Statements -->
-<!-- 表達語句：
-  https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Guide/Expressions_and_Operators
--->
+<!-- 表達語句：https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Guide/Expressions_and_Operators -->
+
 <script>
 // 表達式與陳述式的差異
+
+// Step 1
+
+// when run those code on chrome's console
+var a = 1;  // statement, will return undefined
+a = 2;      // expression, will return result
+
+
+// Step 2
+// statement - return undefined
+if (true) {
+  console.log('info-1');
+}
+
+// error
+// if (var a = 1) {
+//   console.log('info-2');
+// }
+
+if (a = 2) {
+  console.log('info-2');
+}
+
+// Step 3
+
+// Conditional Operator
+// https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
+
+// condition ? expressionIfTrue : expressionIfFalse
+var condition = true;
+let text;
+console.log(condition ? text = 'result-1' : 'result-2');
+console.log(text);
+
 </script>
 
 
@@ -37,77 +73,78 @@ const root = ReactDOM.createRoot(el);
 root.render(<App/>);
 </script>
 
-<!-- 🙇🙇練習結束🙇🙇 -->
+<!-- 1.4 Learn End -->
+
 </main>
-  
+
     <aside
       class="col-md-3"><div class="sticky-top" style="top: 76px">
-  
+
   <div class="list-group">
-  
+
     <a href="/intro/createApp.html"
       class="list-group-item list-group-item-action
-        
+
         ">
       建立 React
     </a>
-  
+
     <a href="/intro/variables.html"
       class="list-group-item list-group-item-action
-        
+
         ">
       使用資料驅動
     </a>
-  
+
     <a href="/intro/expression.html"
       class="list-group-item list-group-item-action
-        
+
         active">
       什麼是 JavaScript 表達式
     </a>
-  
+
     <a href="/intro/jsType.html"
       class="list-group-item list-group-item-action
-        
+
         ">
       部分型別注意事項
     </a>
-  
+
     <a href="/intro/howToWork.html"
       class="list-group-item list-group-item-action
-        
+
         ">
       JSX 做了什麼事？
     </a>
-  
+
     <a href="/intro/reactAttr.html"
       class="list-group-item list-group-item-action
-        
+
         ">
       JSX 與 HTML 的標籤屬性
     </a>
-  
+
     <a href="/intro/jsxStyle.html"
       class="list-group-item list-group-item-action
-        
+
         ">
       如何加入 Style
     </a>
-  
+
     <a href="/intro/commonProblem.html"
       class="list-group-item list-group-item-action
-        
+
         ">
       JSX 常見問題
     </a>
-  
+
     <a href="/intro/introFinal.html"
       class="list-group-item list-group-item-action
-        
+
         ">
       章節挑戰
     </a>
-  
+
   </div>
   <div class="mt-3 text-end p-2 bg-light rounded">
     <small class="text-black-50 fw-light mb-0">文件版本：2022/10/31</small>
@@ -115,7 +152,7 @@ root.render(<App/>);
 </div>
 
 </aside>
-    
+
   </div>
 </div>
 
