@@ -20,3 +20,6 @@ npx http-server -p 4040
 1.6 how show variable on JSX
 /intro/jsType.html
 
+1.7 how JSX work with babel.js
+/intro/howToWork.html
+

@@ -2,11 +2,35 @@
 </head><body class="bg-lighter">
 <div class="container main my-5"><div class="row"><main class="col post">
 <!-- 章節標題 --><div class="mb-4"><h1 class="mt-0 text-muted">JSX 做了什麼事？</h1><small>檔名：<code>howToWork.html</code></small></div>
-<!-- 🔥🔥練習開始🔥🔥 -->
+
+<!-- 1.7 Learn Start -->
 <div id="root"></div>
 <script type="text/babel">
+
+
+// function App() {
+//   return <h1>React 我來了 <small className="text-danger">{new Date().toLocaleDateString() }</small></h1>
+// }
+
+// use babel.js convert to most browser runable js
+// https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=Q&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=env%2Creact%2Cstage-2&prettier=false&targets=&version=7.20.13&externalPlugins=&assumptions=%7B%7D
+
+// "use strict";
+// function App() {
+//   return /*#__PURE__*/React.createElement("h1", null, "React \u6211\u4F86\u4E86 ", /*#__PURE__*/React.createElement("small", {
+//     className: "text-danger"
+//   }, new Date().toLocaleDateString()));
+// }
+
 function App() {
-  return <h1>React 我來了 <small className="text-danger">{new Date().toLocaleDateString() }</small></h1>
+  // 標籤, HTML 屬性, 内容
+  return React.createElement ('h1', null, 'React 我來了',
+    React.createElement ('small', {
+      className: 'text-danger',
+      title: '時間',
+    }, new Date () . toLocaleDateString()),
+    '結尾'
+  )
 }
 
 const el = document.getElementById('root');
@@ -14,77 +38,77 @@ const root = ReactDOM.createRoot(el);
 root.render(<App/>)
 </script>
 
-<!-- 🙇🙇練習結束🙇🙇 -->
+<!-- 1.7 Learn End -->
 </main>
-  
+
     <aside
       class="col-md-3"><div class="sticky-top" style="top: 76px">
-  
+
   <div class="list-group">
-  
+
     <a href="/intro/createApp.html"
       class="list-group-item list-group-item-action
-        
+
         ">
       建立 React
     </a>
-  
+
     <a href="/intro/variables.html"
       class="list-group-item list-group-item-action
-        
+
         ">
       使用資料驅動
     </a>
-  
+
     <a href="/intro/expression.html"
       class="list-group-item list-group-item-action
-        
+
         ">
       什麼是 JavaScript 表達式
     </a>
-  
+
     <a href="/intro/jsType.html"
       class="list-group-item list-group-item-action
-        
+
         ">
       部分型別注意事項
     </a>
-  
+
     <a href="/intro/howToWork.html"
       class="list-group-item list-group-item-action
-        
+
         active">
       JSX 做了什麼事？
     </a>
-  
+
     <a href="/intro/reactAttr.html"
       class="list-group-item list-group-item-action
-        
+
         ">
       JSX 與 HTML 的標籤屬性
     </a>
-  
+
     <a href="/intro/jsxStyle.html"
       class="list-group-item list-group-item-action
-        
+
         ">
       如何加入 Style
     </a>
-  
+
     <a href="/intro/commonProblem.html"
       class="list-group-item list-group-item-action
-        
+
         ">
       JSX 常見問題
     </a>
-  
+
     <a href="/intro/introFinal.html"
       class="list-group-item list-group-item-action
-        
+
         ">
       章節挑戰
     </a>
-  
+
   </div>
   <div class="mt-3 text-end p-2 bg-light rounded">
     <small class="text-black-50 fw-light mb-0">文件版本：2022/10/31</small>
@@ -92,7 +116,7 @@ root.render(<App/>)
 </div>
 
 </aside>
-    
+
   </div>
 </div>
 
