@@ -48,7 +48,9 @@ console.log(condition ? text = 'result-1' : 'result-2');
 console.log(text);
 
 </script>
+<!-- 1.4 Learn End -->
 
+<!-- 1.5 Learn Start -->
 
 <script type="text/babel">
 function App() {
@@ -58,14 +60,25 @@ function App() {
     description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi culpa aspernatur tempore cupiditate illo minima voluptatem blanditiis optio accusantium earum voluptate magni repellendus, ipsa dolor adipisci libero qui commodi veritatis.',
     link: 'https://www.casper.tw/'
   }
-  return <div className="card w-50">
+  return (
+  <div className="card w-50">
     <img src={data.imageUrl} className="card-img-top" alt="..." />
     <div className="card-body">
       <h5 className="card-title">{ data.name }</h5>
       <p className="card-text">{ data.description }</p>
       <a href={data.link} target="_blank" className="btn btn-primary">Go somewhere</a>
+
+      <br />
+      { 1 },
+      { 0 || 1 },
+      { data.name ? data.name : 'default name' },
+
+      { /* if () {} <-- this will error*/  },
+      { (function () { return 2*2 })() },
+
     </div>
   </div>
+  )
 }
 
 const el = document.getElementById('root')
@@ -73,7 +86,19 @@ const root = ReactDOM.createRoot(el);
 root.render(<App/>);
 </script>
 
-<!-- 1.4 Learn End -->
+<script>
+  // statement - Declares a function
+  function fn(params) {
+
+  }
+  // expression
+  const fn = function (params) {
+
+  }
+
+</script>
+
+<!-- 1.5 Learn End -->
 
 </main>
 

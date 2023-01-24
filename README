@@ -13,3 +13,6 @@ npx http-server -p 4040
 
 1.4 javascript - what different between statement & expression
 /intro/expression.html
+
+1.5 react variable "{}" with expression
+/intro/expression.html
