@@ -16,3 +16,7 @@ npx http-server -p 4040
 
 1.5 react variable "{}" with expression
 /intro/expression.html
+
+1.6 how show variable on JSX
+/intro/jsType.html
+

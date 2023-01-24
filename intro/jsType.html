@@ -2,7 +2,8 @@
 </head><body class="bg-lighter">
 <div class="container main my-5"><div class="row"><main class="col post">
 <!-- 章節標題 --><div class="mb-4"><h1 class="mt-0 text-muted">部分型別注意事項</h1><small>檔名：<code>jsType.html</code></small></div>
-<!-- 🔥🔥練習開始🔥🔥 -->
+
+<!-- 1.6 Learn Start -->
 <div id="root"></div>
 <script type="text/babel">
 function App() {
@@ -16,6 +17,21 @@ function App() {
   // #3 直接插入 HTML 結構的變數
   // https://getbootstrap.com/docs/5.2/components/card/#list-groups
 
+  // ver.1
+  // const list = (
+  // <div>
+  //   <li className="list-group-item">An item</li>
+  //   <li className="list-group-item">A second item</li>
+  //   <li className="list-group-item">A third item</li>
+  // </div>)
+
+  // ver.2
+  const list = [
+    <li className="list-group-item">An item</li>,
+    <li className="list-group-item">A second item</li>,
+    <li className="list-group-item">A third item</li>,
+  ]
+
   return <div className="card w-50">
     <img src={data.imageUrl} className="card-img-top" alt="..." />
     <div className="card-body">
@@ -26,11 +42,23 @@ function App() {
 
     {/* 1. JSX 不會呈現物件型別以及特定的原始型別 */}
 
+    { /* get error */ }
+    { /* data */ }
+
+    { /* workround */ }
+    { /* JSON.stringify(data) */ }
+
+    { /* not show */ }
+    { null }
+    { undefined }
+
+    { true ? data.name : 'no name' }
 
     {/* 2. 陣列中的值會直接呈現在畫面上 */}
+    { /*  [1, 2, 3, <div>info</div>] */ }
 
     <ul className="list-group list-group-flush">
-
+      { list }
     </ul>
   </div>
 }
@@ -40,77 +68,77 @@ const root = ReactDOM.createRoot(el);
 root.render(<App/>)
 </script>
 
-<!-- 🙇🙇練習結束🙇🙇 -->
+<!-- 1.6 Learn End -->
 </main>
-  
+
     <aside
       class="col-md-3"><div class="sticky-top" style="top: 76px">
-  
+
   <div class="list-group">
-  
+
     <a href="/intro/createApp.html"
       class="list-group-item list-group-item-action
-        
+
         ">
       建立 React
     </a>
-  
+
     <a href="/intro/variables.html"
       class="list-group-item list-group-item-action
-        
+
         ">
       使用資料驅動
     </a>
-  
+
     <a href="/intro/expression.html"
       class="list-group-item list-group-item-action
-        
+
         ">
       什麼是 JavaScript 表達式
     </a>
-  
+
     <a href="/intro/jsType.html"
       class="list-group-item list-group-item-action
-        
+
         active">
       部分型別注意事項
     </a>
-  
+
     <a href="/intro/howToWork.html"
       class="list-group-item list-group-item-action
-        
+
         ">
       JSX 做了什麼事？
     </a>
-  
+
     <a href="/intro/reactAttr.html"
       class="list-group-item list-group-item-action
-        
+
         ">
       JSX 與 HTML 的標籤屬性
     </a>
-  
+
     <a href="/intro/jsxStyle.html"
       class="list-group-item list-group-item-action
-        
+
         ">
       如何加入 Style
     </a>
-  
+
     <a href="/intro/commonProblem.html"
       class="list-group-item list-group-item-action
-        
+
         ">
       JSX 常見問題
     </a>
-  
+
     <a href="/intro/introFinal.html"
       class="list-group-item list-group-item-action
-        
+
         ">
       章節挑戰
     </a>
-  
+
   </div>
   <div class="mt-3 text-end p-2 bg-light rounded">
     <small class="text-black-50 fw-light mb-0">文件版本：2022/10/31</small>
@@ -118,7 +146,7 @@ root.render(<App/>)
 </div>
 
 </aside>
-    
+
   </div>
 </div>
 
