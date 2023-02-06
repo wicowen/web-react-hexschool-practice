@@ -26,3 +26,6 @@ npx http-server -p 4040
 1.8 JSX attributes
 /intro/reactAttr.html
 
+1.9 JSX inline CSS
+/intro/jsxStyle.html
+
