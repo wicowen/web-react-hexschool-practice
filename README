@@ -23,3 +23,6 @@ npx http-server -p 4040
 1.7 how JSX work with babel.js
 /intro/howToWork.html
 
+1.8 JSX attributes
+/intro/reactAttr.html
+
