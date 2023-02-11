@@ -2,14 +2,42 @@
 </head><body class="bg-lighter">
 <div class="container main my-5"><div class="row"><main class="col post">
 <!-- 章節標題 --><div class="mb-4"><h1 class="mt-0 text-muted">為什麼要用元件</h1><small>檔名：<code>intro.html</code></small></div>
-<!-- 🔥🔥練習開始🔥🔥 -->
+
+<!-- 3.1 Start -->
 <div id="root"></div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+
+
+<!-- get random image from unsplash : https://unsplash.com/ -->
+<!-- ex: https://images.unsplash.com/photo-1674427343914-1479c75a9a9c -->
 <script type="text/babel">
+
+  const ChartData = [
+          { label: '小明', value: 1000 },
+          { label: '杰倫', value: 10000 },
+          { label: '漂亮阿姨', value: 3000 },
+          { label: '卡斯伯', value: 2500 },
+        ];
+
   const App = () => {
     return (
       <>
-        React
+        <Header imgUrl="https://images.unsplash.com/photo-1674427343914-1479c75a9a9c"/>
+
+        <div className="row">
+
+          <div className="col-4">
+            <Sidebar list={[ 'userA','userB','userC']} />
+          </div>
+
+          <div className="col-8">
+            <ChartJs data={ChartData} />
+          </div>
+        </div>
+
+        <Footer>
+          footer's content
+        </Footer>
       </>
     );
   };
@@ -92,70 +120,71 @@
   };
 </script>
 
-<!-- 🙇🙇練習結束🙇🙇 -->
+<!-- 3.1 End -->
+
 </main>
-  
+
     <aside
       class="col-md-3"><div class="sticky-top" style="top: 76px">
-  
+
   <div class="list-group">
-  
+
     <a href="/components/intro.html"
       class="list-group-item list-group-item-action
-        
+
         active">
       為什麼要用元件
     </a>
-  
+
     <a href="/components/createLayout.html"
       class="list-group-item list-group-item-action
-        
+
         ">
       版型建立
     </a>
-  
+
     <a href="/components/createComponent.html"
       class="list-group-item list-group-item-action
-        
+
         ">
       建立元件
     </a>
-  
+
     <a href="/components/propsDestructuring.html"
       class="list-group-item list-group-item-action
-        
+
         ">
       資料解構
     </a>
-  
+
     <a href="/components/dataMap.html"
       class="list-group-item list-group-item-action
-        
+
         ">
       使用資料驅動元件
     </a>
-  
+
     <a href="/components/mapKey.html"
       class="list-group-item list-group-item-action
-        
+
         ">
       為什麼要使用 key 值
     </a>
-  
+
     <a href="/components/nestComponent.html"
       class="list-group-item list-group-item-action
-        
+
         ">
       巢狀元件
     </a>
-  
+
     <a href="/components/componentFinal.html"
       class="list-group-item list-group-item-action
-        
+
         ">
       元件章節挑戰
     </a>
-  
+
   </div>
   <div class="mt-3 text-end p-2 bg-light rounded">
     <small class="text-black-50 fw-light mb-0">文件版本：2022/10/31</small>
@@ -163,7 +192,7 @@
 </div>
 
 </aside>
-    
+
   </div>
 </div>
 
