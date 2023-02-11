@@ -2,14 +2,88 @@
 </head><body class="bg-lighter">
 <div class="container main my-5"><div class="row"><main class="col post">
 <!-- 章節標題 --><div class="mb-4"><h1 class="mt-0 text-muted">章節挑戰</h1><small>檔名：<code>introFinal.html</code></small></div>
-<!-- 🔥🔥練習開始🔥🔥 -->
-<!-- 圖片連結
-  https://images.unsplash.com/photo-1520013573795-38516d2661e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1536&q=80
-  https://images.unsplash.com/photo-1618038483079-bfe64dcb17f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
-  https://images.unsplash.com/photo-1546552696-7d5f4e89b0e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80
- -->
+
+<!-- 1.10 Learn Start -->
+
+<!-- 圖片連結 -->
+<!--
+https://images.unsplash.com/photo-1520013573795-38516d2661e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1536&q=80
+https://images.unsplash.com/photo-1618038483079-bfe64dcb17f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
+https://images.unsplash.com/photo-1546552696-7d5f4e89b0e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80
+-->
+
 <div id="root"></div>
-<!-- <div class="row row-cols-3">
+
+<script type="text/babel">
+function App() {
+  return <>
+    <div className="row row-cols-3">
+      <div className="col">
+        <a href="#" className="card">
+          <img className="card-img-top object-fit" alt=""
+            src="https://images.unsplash.com/photo-1520013573795-38516d2661e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1536&q=80" />
+          <div className="card-body">
+            <span className="text-dark">牙刷</span>
+            <span className="float-end">$99</span>
+          </div>
+        </a>
+      </div>
+      <div className="col">
+        <a href="#" className="card">
+          <img className="card-img-top object-fit" alt=""
+            src="https://images.unsplash.com/photo-1618038483079-bfe64dcb17f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
+          <div className="card-body">
+            <span class="text-dark">海綿</span>
+            <span class="float-end">$65</span>
+          </div>
+        </a>
+      </div>
+      <div className="col">
+        <a href="#" className="card">
+          <img className="card-img-top object-fit" alt=""
+            src="https://images.unsplash.com/photo-1546552696-7d5f4e89b0e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" />
+          <div className="card-body">
+            <span className="text-dark">掛勾</span>
+            <span className="float-end">$120</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </>
+}
+
+const el = document.getElementById('root');
+const root = ReactDOM.createRoot(el);
+root.render(<App />);
+</script>
+
+<style>
+  /* let card's have same hight */
+  .card-img-top {
+    height: 250px;
+  }
+
+  /* let image have same ratio */
+  .object-fit {
+    object-fit: cover;
+  }
+
+  /* remove link's underline & add card's transition */
+  a.card {
+    text-decoration: none;
+    transition: transform .1s, box-shadow .1s;
+  }
+
+  /* add hover effect */
+  a.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .26);
+  }
+
+</style>
+
+<!--
+<div class="row row-cols-3">
   <div class="col">
     <a class="card" target="_blank" href="https://www.google.com.tw/" >
       <img src="https://images.unsplash.com/photo-1520013573795-38516d2661e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1536&q=80" class="card-img-top object-fit" alt="...">
@@ -37,9 +111,12 @@
       </div>
     </a>
   </div>
-</div> -->
+</div>
+-->
+
 <style>
-  /* .object-fit {
+  /*
+  .object-fit {
     object-fit: cover;
   }
   .card-img-top {
@@ -52,80 +129,82 @@
   a.card:hover {
     transform: translateY(-5px);
     box-shadow: 0 0 10px rgba(0, 0, 0, .26);
-  } */
+  }
+  */
 </style>
 
-<!-- 🙇🙇練習結束🙇🙇 -->
+<!-- 1.10 Learn End -->
+
 </main>
-  
+
     <aside
       class="col-md-3"><div class="sticky-top" style="top: 76px">
-  
+
   <div class="list-group">
-  
+
     <a href="/intro/createApp.html"
       class="list-group-item list-group-item-action
-        
+
         ">
       建立 React
     </a>
-  
+
     <a href="/intro/variables.html"
       class="list-group-item list-group-item-action
-        
+
         ">
       使用資料驅動
     </a>
-  
+
     <a href="/intro/expression.html"
       class="list-group-item list-group-item-action
-        
+
         ">
       什麼是 JavaScript 表達式
     </a>
-  
+
     <a href="/intro/jsType.html"
       class="list-group-item list-group-item-action
-        
+
         ">
       部分型別注意事項
     </a>
-  
+
     <a href="/intro/howToWork.html"
       class="list-group-item list-group-item-action
-        
+
         ">
       JSX 做了什麼事？
     </a>
-  
+
     <a href="/intro/reactAttr.html"
       class="list-group-item list-group-item-action
-        
+
         ">
       JSX 與 HTML 的標籤屬性
     </a>
-  
+
     <a href="/intro/jsxStyle.html"
       class="list-group-item list-group-item-action
-        
+
         ">
       如何加入 Style
     </a>
-  
+
     <a href="/intro/commonProblem.html"
       class="list-group-item list-group-item-action
-        
+
         ">
       JSX 常見問題
     </a>
-  
+
     <a href="/intro/introFinal.html"
       class="list-group-item list-group-item-action
-        
+
         active">
       章節挑戰
     </a>
-  
+
   </div>
   <div class="mt-3 text-end p-2 bg-light rounded">
     <small class="text-black-50 fw-light mb-0">文件版本：2022/10/31</small>
@@ -133,7 +212,7 @@
 </div>
 
 </aside>
-    
+
   </div>
 </div>
 
