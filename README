@@ -1,6 +1,9 @@
-## start a local http services
+## Start a local http services
 npx http-server -p 4040
 
+___
+
+### Chapter 1
 
 1.1 build env
 /intro/createApp.html
@@ -34,3 +37,11 @@ npx http-server -p 4040
 
 1.11 exam-part-2 (use data object)
 /intro/introFinalPart2.html
+
+___
+
+### Chapter 2
+
+___
+
+### Chapter 3
