@@ -54,3 +54,6 @@ no page
 
 3.3 convert component from html to react
 /components/createLayout.html
+
+3.4 create first component
+/components/createComponent.html
