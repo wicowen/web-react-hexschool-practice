@@ -60,3 +60,6 @@ no page
 
 3.5 destructuring props
 /components/propsDestructuring.html
+
+3.6 use data object & map render page
+/components/dataMap.html
