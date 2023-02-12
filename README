@@ -51,3 +51,6 @@ no page
 
 3.2 use component to quick create basic layout
 /components/intro.html
+
+3.3 convert component from html to react
+/components/createLayout.html
