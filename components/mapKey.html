@@ -2,10 +2,15 @@
 </head><body class="bg-lighter">
 <div class="container main my-5"><div class="row"><main class="col post">
 <!-- 章節標題 --><div class="mb-4"><h1 class="mt-0 text-muted">為什麼要使用 key 值</h1><small>檔名：<code>mapKey.html</code></small></div>
-<!-- 🔥🔥練習開始🔥🔥 -->
+
+<!-- 3.7 -->
+
 <div id="root"></div>
+
 <script type="text/babel">
-  const App = () => {
+
+const App = () => {
+
   const originProducts = [
     {
       id: 1,
@@ -23,6 +28,7 @@
       price: 200,
     },
   ];
+
   const [products, setProducts] = React.useState(originProducts)
 
   const handleDoublePrice = () => {
@@ -43,19 +49,19 @@
 
   return (
     <>
-      <h3>案例一：當 key 不是唯一值時</h3>
-      {/* 當 key 不是唯一值時 */}
+      <h3>案例一: 當 key 不是唯一值時</h3>
+      {/* when key not unique */}
       {
         products.map((product, index) => {
-          return <div key={product.price}>{product.title} {product.price}
+          return <div key={product.index}>{product.title} {product.price}
             <input type="text" />
           </div>
         })
       }
       <button type="button" onClick={handleDoublePrice}>雙倍金額</button>
-      
-      <h3>案例二：當 key 為陣列索引時</h3>
-      {/* 當 key 為陣列索引時*/}
+
+      <h3>案例二: 當 key 為陣列索引時</h3>
+      {/* when key was array's index */}
       {JSON.stringify(products)}
       {/*
         products.map((product, index) => {
@@ -66,7 +72,7 @@
       */}
       <button type="button" onClick={handleNewProduct}>新增</button>
 
-      <h3>建議：key 為唯一值</h3>
+      <h3>建議: key 為唯一值</h3>
       {/*
         products.map((product, index) => {
           return <div key={product.id}>{product.title} {product.price}
@@ -78,73 +84,74 @@
   )
 }
 
-ReactDOM.createRoot(document.getElementById('root'))
-  .render(<App/>)
+ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
 </script>
-<!-- 🙇🙇練習結束🙇🙇 -->
+
+<!-- 3.7 -->
+
 </main>
-  
+
     <aside
       class="col-md-3"><div class="sticky-top" style="top: 76px">
-  
+
   <div class="list-group">
-  
+
     <a href="/components/intro.html"
       class="list-group-item list-group-item-action
-        
+
         ">
       為什麼要用元件
     </a>
-  
+
     <a href="/components/createLayout.html"
       class="list-group-item list-group-item-action
-        
+
         ">
       版型建立
     </a>
-  
+
     <a href="/components/createComponent.html"
       class="list-group-item list-group-item-action
-        
+
         ">
       建立元件
     </a>
-  
+
     <a href="/components/propsDestructuring.html"
       class="list-group-item list-group-item-action
-        
+
         ">
       資料解構
     </a>
-  
+
     <a href="/components/dataMap.html"
       class="list-group-item list-group-item-action
-        
+
         ">
       使用資料驅動元件
     </a>
-  
+
     <a href="/components/mapKey.html"
       class="list-group-item list-group-item-action
-        
+
         active">
       為什麼要使用 key 值
     </a>
-  
+
     <a href="/components/nestComponent.html"
       class="list-group-item list-group-item-action
-        
+
         ">
       巢狀元件
     </a>
-  
+
     <a href="/components/componentFinal.html"
       class="list-group-item list-group-item-action
-        
+
         ">
       元件章節挑戰
     </a>
-  
+
   </div>
   <div class="mt-3 text-end p-2 bg-light rounded">
     <small class="text-black-50 fw-light mb-0">文件版本：2022/10/31</small>
@@ -152,7 +159,7 @@ ReactDOM.createRoot(document.getElementById('root'))
 </div>
 
 </aside>
-    
+
   </div>
 </div>
 

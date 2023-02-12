@@ -63,3 +63,6 @@ no page
 
 3.6 use data object & map render page
 /components/dataMap.html
+
+3.7 key is important when use map
+/components/mapKey.html
